@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Guess The Color Game - Easter Hunt</title>
+<script>
+	function answer(a) {
+		wrong = 'https://jigex.com/yXDFQ';
+		right = 'hhttps://jigex.com/yXDFQ';
+		correct = 5;
+
+		if(a == correct) {
+			document.getElementById('result').innerHTML = 'Link: '+right
+			window.location.href = right
+		} else {
+			document.getElementById('result').innerHTML = 'Link: '+wrong
+			window.location.href = wrong
+		}
+		return false;
+	}
+</script>
+</head>
+<body>
+<h1>What color are her panties?</h1>
+<ul>
+<li><a href="javascript:answer(1)">Black</a></li>
+<li><a href="javascript:answer(2)">White</a></li>
+<li><a href="javascript:answer(3)">Pink</a></li>
+<li><a href="javascript:answer(4)">Yellow</a></li>
+</ul>
+<div id="result">&nbsp;</div>
+</body>
+</html>
